@@ -19,8 +19,15 @@ jobs:
       - run:
           name: Deploy docs to production or staging
           command: |
+            # We tell the s3_website gem to only download the .jar file, and
+            # then we manually invoke it. This was added as a workaround for
+            # error `Failed to parse ERB in staging/s3_website.yml`.
+            # There will probably be a different long-term fix when
+            # https://github.com/laurilehmijoki/s3_website/issues/323 is
+            # resolved.
+            bundle exec s3_website install
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
-              bundle exec s3_website push --site jekyll/_site/production
+              java -cp $(bundle show s3_website)/*.jar s3.website.Push --site jekyll/_site/production
             else
-              bundle exec s3_website push --config-dir staging --site jekyll/_site/staging
+              java -cp $(bundle show s3_website)/*.jar s3.website.Push --config-dir staging --site jekyll/_site/staging
             fi
