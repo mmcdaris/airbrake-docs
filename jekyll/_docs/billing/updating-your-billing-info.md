@@ -25,6 +25,9 @@ by following these steps.
 ### Navigate to your **Account & billing** under your user name in the upper right corner.
 ![billing settings](/docs/assets/img/docs/airbrake/billing_settings.png)
 
-### Navigate to the **Billing & payment** tab, update your billing info, and then **Save**.
+### Navigate to the **Billing information** tab, update your billing info, and then **Save**.
 ![billing_update](/docs/assets/img/docs/airbrake/billing_update.png)
+
+### Navigate to the **Payment method** tab, update your credit card info, and then **Save**.
+![billing_update](/docs/assets/img/docs/airbrake/credit_card_edit.png)
 
