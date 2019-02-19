@@ -68,6 +68,24 @@ curl https://airbrake.io/api/v4/projects/PROJECT_ID/sourcemaps \
 Note: `PROJECT_ID` and `PROJECT_API_KEY` will need to be switched out for the real
 values from your project.
 
+#### Custom sourcemap URLs
+
+If JavaScript file is not publicly accessible you need to manually
+associate the file and the sourcemap by providing a custom sourcemap URL.
+
+Custom sourcemap URLs are supported by assigning a special property of
+`notice.context` called `sourceMaps`. The keys of the `sourceMaps` object
+represent shell filename patterns and the values are URLs of your sourcemaps.
+
+```js
+airbrake.addFilter(function(notice) {
+  notice.context.sourceMaps = {
+    'https://example.com/app.min.js': 'https://example.com/app.min.js.map'
+  };
+  return notice;
+});
+```
+
 ### Troubleshooting
 
 For your private sourcemap upload to function correctly it's important you check that:
