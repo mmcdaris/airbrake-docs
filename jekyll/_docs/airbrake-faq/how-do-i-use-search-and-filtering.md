@@ -73,7 +73,8 @@ After the custom aggregation has been processed, you will be able to filter erro
 
 Sort by options include:
 
-- **Last notice occurrence**: Sorts by most recent notice
-- **Notice count**: Sorts by the number of notices in an error group
+- **Last occurrence**: Sorts by most recent notice
+- **Occurrence count**: Sorts by the number of notices in an error group
 - **Creation date**: Sorts by error group creation date
 - **Error Weight**: Sorts by recent error impact based on traffic distribution and density
+- **Error Severity**: Sorts by severity of the error from highest to lowest severity
