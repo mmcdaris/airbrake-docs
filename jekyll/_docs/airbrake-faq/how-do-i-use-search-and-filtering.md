@@ -27,18 +27,32 @@ Advanced filtering options allow for further narrowing of results. These options
 
 Advanced filtering is available for on [all paid plans](https://airbrake.io/pricing).
 
-- **Environment**: e.g. Production, Staging, QA, etc.
-- **Component**: The controller the error occurred in
 - **Action**: The controller method the error occurred in
-- **Deploy**: Set up using [Deployment Tracking](/docs/deploy-tracking)
-- **Before**: Shows all groups with last occurrence before a specific date
 - **After**: Shows all groups with last occurrence after a specific date
-- **On**: Shows all groups with last occurrence on a specific date
+- **Before**: Shows all groups with last occurrence before a specific date
+- **Browser engine**: The engine the browser is built on
+- **Browser platform**: OS the browser is running on
+- **Browser version**: Version of the browser
+- **Component**: The controller the error occurred in
+- **Deploy**: Set up using [Deployment Tracking](/docs/deploy-tracking)
+- **Environment**: e.g. Production, Staging, QA, etc.
 - **File**: The file associated with the error
-- **Muted**: Shows all muted/unmuted errors
+- **Function**: The function where the error occurred
+- **Has comments**: Are comments added to the error in Airbrake
 - **Hostname**: The hostname associated with the error
+- **HTTP method**: Shows errors with a specific HTTP method (DELETE, GET, POST, etc)
+- **Message**: Searches message associated with the error
+- **Message param**: Searches parameters associated with the message
+- **Muted**: Shows all muted/unmuted errors
+- **On**: Shows all groups with last occurrence on a specific date
 - **RemoteAddr**: The remote address where the error occurred
+- **Remote country**: The location of the app server
+- **Severity**: Shows the [severity](/docs/airbrake-faq/what-is-severity/) associated with the error
+- **URL**: Shows URL that produced the error
 - **User**: The user that was signed in when the error occurred
+- **User address**: The IP address associated with the user
+- **User country**: The country associated with the IP address
+- **Version**: Search by the [app version](/docs/features/app-versions/)
 
 *Note: You'll only see an option to filter if you are sending the data. E.g. If you don't have [Deployment Tracking](/docs/deploy-tracking) set up, you won't see the filter by deploy option.*
 
