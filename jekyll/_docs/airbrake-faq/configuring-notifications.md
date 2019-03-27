@@ -29,7 +29,7 @@ automatically. **This option is only available to admins on the account**
 
 - These settings are user specific.
 - These settings only affect email notifications. They will not affect your
-  Slack or Hipchat integrations as those are setup per project.*
+  Slack or Flowdock integrations as those are setup per project.*
 - The environment needs to be `production` (case independent). eg: `Production`
   is a production environment while `production_US` and `prod` are not a
   production environments.
