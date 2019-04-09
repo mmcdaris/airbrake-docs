@@ -144,7 +144,7 @@ rake airbrake:install_heroku_deploy_hook
 Airbrake sets `AIRBRAKE_API_KEY` and `AIRBRAKE_PROJECT_ID` but those can be 
 modified.
 
-![deploy_config_vars](/docs/assets/img/docs/airbrake/features/deploy_config_vars.png)
+![deploy_config_vars](/docs/assets/img/docs/features/deploy_config_vars.png)
 
 ## Deploy tracking on Engine Yard Cloud
 
