@@ -141,6 +141,11 @@ export REPOSITORY_URL=git@github.com:username/repo.git
 rake airbrake:install_heroku_deploy_hook
 {% endhighlight %}
 
+Airbrake sets `AIRBRAKE_API_KEY` and `AIRBRAKE_PROJECT_ID` but those can be 
+modified.
+
+![deploy_config_vars](/docs/assets/img/docs/airbrake/deploy_config_vars.png)
+
 ## Deploy tracking on Engine Yard Cloud
 
 To notify Airbrake of your deploys to EngineYard cloud, you can use the
