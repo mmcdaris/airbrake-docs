@@ -117,8 +117,8 @@ To implement Deploy Hooks on Heroku, please use one of the following options.
 You can manually create the Deploy hook:
 {% highlight bash %}
 heroku addons:add deployhooks:http \
---url="https://airbrake.io/api/v3/projects/PROJECT_ID/heroku-deploys\
-?key=PROJECT_KEY\
+--url="https://airbrake.io/api/v3/projects/AIRBRAKE_PROJECT_ID/heroku-deploys\
+?key=AIRBRAKE_API_KEY\
 &environment=ENVIRONMENT\
 &repository=REPOSITORY_URL"
 {% endhighlight %}
