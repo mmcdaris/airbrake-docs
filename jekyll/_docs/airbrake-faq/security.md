@@ -47,10 +47,12 @@ When accepting payments Airbrake does so in a PCI compliant manner. Our PCI SAQ 
 
 If you would like to report a vulnerability, security issue or have other security related concerns about an Airbrake product please contact <a href="mailto:security@airbrake.io">security@airbrake.io</a>.
 
-If you are disclosing a vulnerability please provide
+If you are disclosing a vulnerability please do so [responsibly](https://en.wikipedia.org/wiki/Responsible_disclosure) and provide
 
 - a summary of the vulnerability
 - a proof of concept
 - a list of tools used
 - the output from the tools used
 - the commands used to execute the tools
+
+Please note Airbrake **DOES NOT** maintain a bug bounty program **nor** does Airbrake pay for unsolicited disclosures.
