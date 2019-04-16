@@ -19,6 +19,13 @@ Airbrake needs permission to create GitHub issues for your project.
 
 ![github auth](/docs/assets/img/docs/integrations/github_auth.png)
 
+"Airbrake" access can be found/revoked in [Authorized OAuth Apps](https://github.com/settings/applications)
+
+![github access](/docs/assets/img/docs/integrations/github_access.png)
+
+Airbrake only ask once for permission when authorizing unless the access is revoked on GitHub side.
+In that case, we for permission again.
+
 ## Add your project's GitHub repo url
 For a GitHub user **mmcdaris** who has a repo named **coffee-bot** the GitHub repo URL you would use is:
 
