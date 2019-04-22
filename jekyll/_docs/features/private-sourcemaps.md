@@ -85,6 +85,22 @@ airbrake.addFilter(function(notice) {
   return notice;
 });
 ```
+Filename pattern uses Unix glob-like syntax:
+
+- `*` matches any sequence of non-path-separators
+- `**` matches any sequence of characters, including path separators
+- `?` matches any single non-path-separator character
+
+For example:
+
+```js
+airbrake.addFilter(function(notice) {
+  notice.context.sourceMaps = {
+    '**/app.min.js': 'https://example.com/app.min.js.map'
+  };
+  return notice;
+});
+```
 
 ### Troubleshooting
 
