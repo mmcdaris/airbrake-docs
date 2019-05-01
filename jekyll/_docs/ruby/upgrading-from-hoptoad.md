@@ -36,7 +36,7 @@ updated frequently, you can always find the current version on
 GitHub](https://github.com/airbrake/airbrake/releases)._
 
 ```rb
-gem 'airbrake', '~> 8.3.2'
+gem 'airbrake', '~> 9.2.0'
 ```
 
 Then run the update command to update our main gem and the `airbrake-ruby` gem
@@ -68,7 +68,10 @@ Overwrite /Users/arthur/my-app/config/initializers/airbrake.rb? (enter "h" for h
 
 To track Performance Monitoring data, enable
 [the `performance_stats` option](https://github.com/airbrake/airbrake-ruby#performance_stats)
-in your `config/initializers/airbrake.rb` file.
+in your `config/initializers/airbrake.rb` file. The performance monitoring
+feature is currently in beta and is not available to all accounts. Please
+[contact support](mailto:support@airbrake.io) if you're interested in
+participating in the beta.
 
 ```rb
 Airbrake.configure do |c|
