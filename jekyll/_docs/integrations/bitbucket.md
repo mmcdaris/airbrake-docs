@@ -14,9 +14,19 @@ The default behaviour is to automatically create a Bitbucket issue when a new
 type of error is reported to Airbrake, this can be turned off if you prefer to
 create a Bitbucket issue from an Airbrake error manually.
 
+### What information is in a created issue?
+
+A Bitbucket issue created from an Airbrake error includes a lot of helpful
+information. It links back to the Airbrake error, displays the error type and
+message, shows where and when the error occurred, and more. Here is an example of
+a created issue:
+
+![example-issue](/docs/assets/img/docs/integrations/bitbucket_example_issue.png)
+
+## How to add the Bitbucket integration
 ### Authenticate with Bitbucket
-Airbrake needs permission to create Bitbucket issues for your project, our next
-step is to authenticate!
+Airbrake needs permission to create Bitbucket issues for your project, so the
+first step is to authenticate!
 
 1. Click **Integrations** for your project
 2. Click **Bitbucket**
