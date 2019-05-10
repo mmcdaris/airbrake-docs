@@ -28,8 +28,8 @@ Advanced filtering options allow for further narrowing of results. These options
 Advanced filtering is available for on [all paid plans](https://airbrake.io/pricing).
 
 - **Action**: The controller method the error occurred in
-- **After**: Shows all groups with last occurrence after a specific date
-- **Before**: Shows all groups with last occurrence before a specific date
+- **After**: Shows all occurrences that occurred after a specific date
+- **Before**: Shows all occurrences that occurred before a specific date
 - **Browser engine**: The engine the browser is built on
 - **Browser platform**: OS the browser is running on
 - **Browser version**: Version of the browser
