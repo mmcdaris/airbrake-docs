@@ -86,13 +86,10 @@ the add_filter configuration option.
 ```ruby
 noisy_errors = [Resque::TermException, NoMethodError, Redis::CannotConnectError]
 
-noisy_errors.each do |noisy_error|
-  Airbrake.add_filter do |notice|
-    if noisy_errors.include?(notice.stash[:exception])
-      # Ignore this error 90% of the time
-      random_number = Random.rand(1..10)
-      notice.ignore! if random_number != 1
-    end
-  end
+Airbrake.add_filter do |notice|
+  next unless noisy_errors.include?(notice.stash[:exception])
+
+  # Ignore this error 90% of the time.
+  notice.ignore! if rand(1..10) <= 9
 end
 ```
