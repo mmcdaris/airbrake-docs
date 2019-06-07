@@ -17,6 +17,8 @@ problems effecting your users, giving you everything you need to solve problems
 fast!
 
 This integration supports **onDemand** and **Standalone** versions of JIRA.
+**Currently Airbrake only supports the classic projects on JIRA. We are looking
+at supporting the next gen projects soon.**
 
 ## Configuring the JIRA integration
 
