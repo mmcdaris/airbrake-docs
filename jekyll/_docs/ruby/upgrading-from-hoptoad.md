@@ -36,7 +36,7 @@ updated frequently, you can always find the current version on
 GitHub](https://github.com/airbrake/airbrake/releases)._
 
 ```rb
-gem 'airbrake', '~> 9.2.0'
+gem 'airbrake', '~> 9.3.0'
 ```
 
 Then run the update command to update our main gem and the `airbrake-ruby` gem
@@ -64,18 +64,11 @@ $ rails generate airbrake PROJECT_ID API_KEY
 Overwrite /Users/arthur/my-app/config/initializers/airbrake.rb? (enter "h" for help) [Ynaqdhm]
 ```
 
-### Step 3: Update config
+For a full migration guide, check out
+[our doc on GitHub](https://github.com/airbrake/airbrake/blob/master/docs/Migration_guide_from_v4_to_v5.md).
 
-To track Performance Monitoring data, enable
-[the `performance_stats` option](https://github.com/airbrake/airbrake-ruby#performance_stats)
-in your `config/initializers/airbrake.rb` file. The performance monitoring
-feature is currently in beta and is not available to all accounts. Please
-[contact support](mailto:support@airbrake.io) if you're interested in
-participating in the beta.
-
-```rb
-Airbrake.configure do |c|
-  # Add the following line to your config:
-  c.performance_stats = true
-end
-```
+_**Note:** by default, current versions of our gem monitor performance along
+with errors. If you want to disable performance monitoring, set [the
+`performance_stats`
+option](https://github.com/airbrake/airbrake-ruby#performance_stats) to
+`false`._
