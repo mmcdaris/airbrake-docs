@@ -2,6 +2,10 @@
   slug: installing-airbrake
   index: installing-airbrake
 
+- name: "Performance Monitoring"
+  slug: performance-monitoring
+  index: performance-monitoring
+
 - name: "Airbrake features"
   slug: features
   index: features
