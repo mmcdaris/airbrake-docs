@@ -59,6 +59,12 @@ an HTTP response; it’s the core unit of data used to provide insight into your
 app’s performance. The number of requests monitored are counted against your
 monthly Performance Monitoring usage.
 
+### Is Performance Monitoring included in the free trial?
+
+Yes. All new accounts receive a free trial of Airbrake which includes all
+Performance Monitoring usage! In addition to this, all accounts receive a free
+amount of usage every month.
+
 ### Does Airbrake interfere with my other Performance Monitoring tools?
 
 Airbrake Performance Monitoring plays nicely with NewRelic, Skylight, and other
