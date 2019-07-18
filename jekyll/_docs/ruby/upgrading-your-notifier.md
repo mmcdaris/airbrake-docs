@@ -28,10 +28,8 @@ bundle update airbrake airbrake-ruby
 
 To track Performance Monitoring data, enable
 [the `performance_stats` option](https://github.com/airbrake/airbrake-ruby#performance_stats)
-in your `config/initializers/airbrake.rb` file. The performance monitoring
-feature is currently in beta and is not available to all accounts. Please
-[contact support](mailto:support@airbrake.io) if you're interested in
-participating in the beta.
+in your `config/initializers/airbrake.rb` file. Get more info about
+[Performance Monitoring](https://airbrake.io/product/performance).
 ```rb
 Airbrake.configure do |c|
   # Add the following line to your config:
