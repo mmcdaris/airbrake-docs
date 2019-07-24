@@ -13,12 +13,21 @@ Application Performance Monitoring with Airbrake makes it easy to:
 - Zoom into specific endpoints to see time spent in the DB, view, cache,
   external requests, and more
 
-## Installation
+## Supported languages
 
-Performance Monitoring is available to Rails projects and is built into the
-same notifier you use to report errors from your application. To start sending
-performance data for your app to Airbrake just install or upgrade the Airbrake
-gem to the latest version.
+Performance Monitoring is available for
+[Rails projects](#rails-installation),
+and is in beta for
+[Go](#go-lang-support),
+[Django](#django-and-flask-support), and
+[Flask apps](#django-and-flask-support). Is there a language you'd like us to support? Let us
+know at [support@airbrake.io](mailto:support@airbrake.io).
+
+## Rails installation
+
+Performance Monitoring is built into the same notifier you use to report errors
+from your application. To start sending performance data for your app to
+Airbrake just install or upgrade the Airbrake gem to the latest version.
 
 ### Step 1: Install the latest version of the Airbrake gem
 
@@ -42,6 +51,27 @@ performance stats in the dashboard.
 If you are upgrading from a previous version of our gem, please follow [our
 upgrade guide](/docs/ruby/upgrading-your-notifier/) to get started with
 Performance Monitoring.
+
+## Golang support
+
+Go support for Performance Monitoring is currently in beta and currently
+features:
+- Sending route stats
+- HTTP middlewares for Gin and Beego users
+- Wrapping important code blocks for detailed timing
+- Collecting stats about individual SQL queries
+
+Check out [our official GitHub
+repo](https://github.com/airbrake/gobrake#sending-routes-stats) to get started.
+
+## Django and Flask support
+
+Performance Monitoring for Django and Flask apps is currently in beta and is
+supported out of the box - no extra setup required. All you have to do is
+install the latest version of the library. Check out our official GitHub repo
+for more info:
+- [View Django setup guide](https://github.com/airbrake/pybrake#django-integration)
+- [View Flask documentation](https://github.com/airbrake/pybrake#flask-integration)
 
 ## Performance Dashboard
 
