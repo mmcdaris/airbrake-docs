@@ -18,7 +18,7 @@ Application Performance Monitoring with Airbrake makes it easy to:
 Performance Monitoring is available for
 [Rails projects](#rails-installation),
 and is in beta for
-[Go](#go-lang-support),
+[Go](#golang-support),
 [Django](#django-and-flask-support), and
 [Flask apps](#django-and-flask-support). Is there a language you'd like us to support? Let us
 know at [support@airbrake.io](mailto:support@airbrake.io).
