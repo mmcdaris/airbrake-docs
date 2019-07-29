@@ -60,6 +60,8 @@ bundle exec rake airbrake:test
 
 ## Deploying to Heroku (without the addon)
 
+You can find more information on [deploy tracking on Heroku here](https://airbrake.io/docs/features/deploy-tracking/#deploy-tracking-on-heroku).
+
 ### Step 1: initialize your project with git
 Starting from where we left off--in the `airbrake_rails_test` directory from
 above. Make a local git repo:
