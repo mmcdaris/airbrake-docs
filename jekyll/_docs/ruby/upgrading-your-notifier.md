@@ -14,7 +14,7 @@ updated frequently, you can always find the current version on
 GitHub](https://github.com/airbrake/airbrake/releases)._
 
 ```rb
-gem 'airbrake', '~> 9.3.0'
+gem 'airbrake', '~> 9.4'
 ```
 
 Then run the update command to update our main gem and the `airbrake-ruby` gem

@@ -34,7 +34,7 @@ Airbrake just install or upgrade the Airbrake gem to the latest version.
 Add the Airbrake gem to your `Gemfile`:
 
 ```ruby
-gem 'airbrake', '~> 9.3'
+gem 'airbrake', '~> 9.4'
 ```
 
 To integrate Airbrake with your Rails application, invoke the following command
