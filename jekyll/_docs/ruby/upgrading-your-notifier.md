@@ -4,35 +4,32 @@ title: Upgrading your notifier
 categories: [ruby]
 description: Upgrading your notifier
 ---
-### Step 1: Update your gems
+> **Note:** If you are upgrading from version `4.X.X` or older, please
+follow our [guide to upgrade from a deprecated version](/docs/ruby/upgrading-from-deprecated-versions/).
 
-Upgrade to the latest version of our gem by updating your Gemfile:
-
-_**Note:** our gem is
-updated frequently, you can always find the current version on
-[RubyGems](https://rubygems.org/gems/airbrake) or on [our
-GitHub](https://github.com/airbrake/airbrake/releases)._
+**Step 1:** To upgrade to the latest version of the
+[airbrake gem](https://github.com/airbrake/airbrake)
+just edit your `Gemfile`:
 
 ```rb
 gem 'airbrake', '~> 9.4'
 ```
 
-Then run the update command to update our main gem and the `airbrake-ruby` gem
-it uses:
+**Step: 2:** Run the update command to update the `airbrake` gem and `airbrake-ruby` gem
+it depends on:
 
 ```
 bundle update airbrake airbrake-ruby
 ```
 
-### Step 2: Update config
+That's it! Your upgrade is complete.
 
-To track Performance Monitoring data, enable
-[the `performance_stats` option](https://github.com/airbrake/airbrake-ruby#performance_stats)
-in your `config/initializers/airbrake.rb` file. Get more info about
-[Performance Monitoring](https://airbrake.io/product/performance).
-```rb
-Airbrake.configure do |c|
-  # Add the following line to your config:
-  c.performance_stats = true
-end
-```
+> **Note:** by default, current versions of our gem **monitor performance** along
+with errors. If you want to disable performance monitoring, set the
+[`performance_stats`
+option](https://github.com/airbrake/airbrake-ruby#performance_stats) to
+`false`.
+
+#### Problems upgrading?
+If you run into any issues upgrading, we are happy to help. Just let us
+know what happened at [support@airbrake.io](mailto:support@airbrake.io).
