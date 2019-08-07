@@ -46,6 +46,9 @@ rails g airbrake PROJECT_ID PROJECT_KEY
 After you deploy this Airbrake upgrade you will start seeing your applications
 performance stats in the dashboard.
 
+If you run into any issues, we are happy to help. Just let us know
+what happened at [support@airbrake.io](mailto:support@airbrake.io).
+
 ### Upgrading from a previous gem version?
 
 If you are upgrading from a previous version of our gem, please follow [our
