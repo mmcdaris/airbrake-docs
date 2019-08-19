@@ -38,10 +38,17 @@
     {% for category in site.data.categories %}
     <li>
       {% assign category_url = category.index | prepend: '/' | append: '/' %}
-      <a class="sidebar-link sidebar-link--title{% if page.url == category_url %} sidebar-link--active{% endif %}" href="{{ site.baseurl }}/{{ category.index }}/">
-        {{ category.name }}
+      <a class="sidebar-link
+                sidebar-link--title
+                {% if page.url contains category_url %}
+                  sidebar-link--active
+                {% endif %}"
+         href="{{ site.baseurl}}{{ category_url }}">
+         {{ category.name }}
       </a>
-      <ul class="list-unstyled sidebar-sublist">
+
+      <ul class="list-unstyled collapse{% if page.url contains category_url %} in{% endif %}"
+          id="collapse-{{ category.index }}">
         {% for doc in site.docs %}
         {% if (doc.categories contains category.slug) and (doc.slug != category.index) %}
         {% if doc.short-title %}
@@ -53,7 +60,6 @@
         {% if doc.children %}
         {% capture title %}{{ title }} ({{ doc.children | size }}){% endcapture %}
         {% endif %}
-
         <li>
           <a class="sidebar-link{% if page.url == doc.url %} sidebar-link--active{% endif %}"
             href="{{ site.baseurl }}{{ doc.url }}">
