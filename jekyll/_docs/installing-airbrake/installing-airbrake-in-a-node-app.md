@@ -23,7 +23,7 @@ Add the Airbrake error notifier to your `package.json` then run `npm install` fr
 }
 ```
 
-Or install the notifier [manually](https://github.com/airbrake/airbrake-js#installation)
+Or install the notifier [manually](https://github.com/airbrake/airbrake-js/tree/master/packages/airbrake-js#installation)
 
 **Step 2:** Configure the library
 
@@ -47,5 +47,5 @@ var airbrake = new AirbrakeClient({
 });
 ```
 
-*For our [full Node example app code](https://github.com/airbrake/airbrake-js/tree/master/examples/nodejs) and more information, please visit our [official GitHub repo](https://github.com/airbrake/airbrake-js).*
+*For our [full Node example app code](https://github.com/airbrake/airbrake-js/tree/master/packages/node/examples) and more information, please visit our [official GitHub repo](https://github.com/airbrake/airbrake-js).*
 
