@@ -43,7 +43,14 @@
                 {% if page.url contains category_url %}
                   sidebar-link--active
                 {% endif %}"
-         href="{{ site.baseurl}}{{ category_url }}">
+         {% if page.url contains category_url %}
+           aria-expanded="true"
+         {% else %}
+           aria-expanded="false"
+         {% endif %}
+         aria-controls="collapseExample"
+         data-toggle="collapse"
+         href="#collapse-{{ category.index }}">
          {{ category.name }}
       </a>
 
