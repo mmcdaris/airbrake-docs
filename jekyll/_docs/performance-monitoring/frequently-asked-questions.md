@@ -36,9 +36,9 @@ only pay for the number of requests that are monitored by Airbrake.
 
 ### What does Performance Monitoring cost?
 
-After the free usage tier of 5,000 requests, pricing for Airbrake Performance
-Monitoring is based on the amount of requests monitored in each monthly billing
-period.
+Pricing for Airbrake Performance Monitoring is based on the number of requests
+monitored in the monthly billing period. Each month includes a free amount of
+usage, making it free and easy to try.
 
 | Requests monitored | Price      |
 |--------------------|------------|
