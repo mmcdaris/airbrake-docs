@@ -15,48 +15,64 @@ description: installing airbrake in a Django app
 
 ## Installation
 
+Our [Python library
+pybrake](https://github.com/airbrake/pybrake#django-integration) requires
+Python 3.4+. If you are using an earlier version, please check out
+[airbrake-django](https://github.com/airbrake/airbrake-django).
+
 ```sh
-pip install git+https://github.com/airbrake/airbrake-django.git
+pip install -U pybrake
 ```
 
-## Configuration
-To configure airbrake you will need to add airbrake to your `INSTALLED_APPS`
-and create the `AIRBRAKE` dictionary. Add `airbrake` to `INSTALLED_APPS` in
-your `settings.py`:
+## Django integration
+First you need to add your pybrake config to your Django `settings.py` file
+using your project's `id` and `api_key`.
 
 ```python
-INSTALLED_APPS = (
-    'django.contrib.admin',
-    # ...
-    'airbrake'
+AIRBRAKE = dict(
+    project_id=123,
+    project_key='FIXME',
 )
 ```
 
-Create the `AIRBRAKE` dictionary in your `settings.py` for project:
+The next step is activating the Airbrake middleware.
 
 ```python
-# Airbrake settings
-AIRBRAKE = {
-    'API_KEY': 'YOUR_PROJECT_API_KEY',
-    'TIMEOUT': 5,
-    'ENVIRONMENT': 'production',
+MIDDLEWARE = [
+    ...
+    'pybrake.django.AirbrakeMiddleware',
+]
+```
+
+The last step is configuring the airbrake logging handler. After that you are
+ready to start reporting errors to Airbrake from your Django app.
+
+```python
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'airbrake': {
+            'level': 'ERROR',
+            'class': 'pybrake.LoggingHandler',
+        },
+    },
+    'loggers': {
+        'app': {
+            'handlers': ['airbrake'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+    },
 }
 ```
 
-Then just restart your server!
-
-## Automatically sending errors
-
-```python
-MIDDLEWARE = (
-    ...,
-    'airbrake.middleware.AirbrakeNotifierMiddleware'
-)
-```
 
 ## Going further
 
-Please visit our [official GitHub repo](https://github.com/airbrake/airbrake-django)
-for details on
-[manually sending errors](https://github.com/airbrake/airbrake-django#manually-sending-errors-to-airbrake),
-additional configuration options, and more.
+Please visit our [official GitHub
+repo](https://github.com/airbrake/pybrake#django-integration) for details on
+useful features like:
+* [Adding custom params to
+  errors](https://github.com/airbrake/pybrake#adding-custom-params)
+* [Filtering errors](https://github.com/airbrake/pybrake#filtering-keys)
