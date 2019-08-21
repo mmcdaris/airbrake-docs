@@ -17,7 +17,7 @@
             <ul id="search-results" class="list-unstyled dropdown-menu"></ul>
           </form>
           <article>
-            <h1>{{ page.title }}</h1>
+            {% if page.title %}<h1>{{ page.title}}</h1>{% endif %}
             {{ content }}
             {% if page.collection == "docs" and page.layout == "classic-docs" %}
               {% include doc-footer.html %}

@@ -25,6 +25,7 @@ a:hover {
 }
 
 .ab-sm-row-flex {
+  min-height: 75vh;
   @media (min-width: $screen-sm-min) {
     display: flex;
   }

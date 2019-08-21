@@ -1,5 +1,6 @@
 .content-wrap {
   background: $ab-white;
+  min-height: 75vh;
 
   @media (min-width: $screen-sm-min) {
     box-shadow: inset 1px 0px 0px $ab-grey-800;
@@ -7,7 +8,7 @@
 }
 
 .content {
-  max-width: 850px;
+  max-width: 1300px;
   padding: $padding-sidebar-content;
   color: $ab-grey-300;
   font-size: $fontXDefault;
@@ -16,12 +17,8 @@
     padding: 2em;
   }
 
-  #site-search {
-    margin-bottom: 2em;
-  }
-
   h1, h2, h3, h4, h5, h6 {
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-bottom: 1em;
   }
 
