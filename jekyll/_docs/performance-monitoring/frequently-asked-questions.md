@@ -42,7 +42,7 @@ period.
 
 | Requests monitored | Price      |
 |--------------------|------------|
-| Up to 5 thousand   | Free       |
+| Up to 50 thousand  | Free       |
 | Up to 5 million    | $99        |
 | Up to 10 million   | $149       |
 | Up to 20 million   | $249       |
