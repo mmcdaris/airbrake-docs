@@ -1,38 +1,22 @@
 <nav class="sidebar">
   <div class="visible-xs">
-    Select a page:
+    Select a category
     <select id="mobile-nav" class="mobile-nav">
-      <option value="https://airbrake.io/docs/api/">API Reference</option>
+      <option value="{{ site.baseurl }}/">Docs Home</option>
       {% for category in site.data.categories %}
         {% assign category_url = category.index | prepend: '/' | append: '/' %}
         <option value="{{ site.baseurl }}/{{ category.index }}/"
           {% if page.url == category_url %}selected{% endif %}>
           {{ category.name }}
         </option>
-        {% for doc in site.docs %}
-          {% if (doc.categories contains category.slug) and (doc.slug != category.index) %}
-            {% if doc.short-title %}
-              {% assign title = doc.short-title %}
-            {% else %}
-              {% assign title = doc.title %}
-            {% endif %}
-            {% if doc.children %}
-              {% capture title %}{{ title }} ({{ doc.children | size }}){% endcapture %}
-            {% endif %}
-            <option value="{{ site.baseurl }}{{ doc.url }}"
-              {% if page.url == doc.url %}selected{% endif %}>
-              &nbsp;&nbsp;{{ title }}
-            </option>
-          {% endif %}
-        {% endfor %}
       {% endfor %}
+      <option value="https://airbrake.io/docs/api/">API Reference</option>
     </select>
   </div>
 
   <ul class="list-unstyled hidden-xs">
     <li>
-      <a href="https://airbrake.io/docs/api/" class="sidebar-link sidebar-link--title"
-         target="_blank">API Reference</a>
+      <a href="{{ site.baseurl }}/" class="sidebar-link sidebar-link--title">Docs Home</a>
     </li>
     {% capture sidebar %}
     {% for category in site.data.categories %}
@@ -41,28 +25,6 @@
       <a class="sidebar-link sidebar-link--title{% if page.url == category_url %} sidebar-link--active{% endif %}" href="{{ site.baseurl }}/{{ category.index }}/">
         {{ category.name }}
       </a>
-      <ul class="list-unstyled sidebar-sublist">
-        {% for doc in site.docs %}
-        {% if (doc.categories contains category.slug) and (doc.slug != category.index) %}
-        {% if doc.short-title %}
-        {% assign title = doc.short-title %}
-        {% else %}
-        {% assign title = doc.title %}
-        {% endif %}
-
-        {% if doc.children %}
-        {% capture title %}{{ title }} ({{ doc.children | size }}){% endcapture %}
-        {% endif %}
-
-        <li>
-          <a class="sidebar-link{% if page.url == doc.url %} sidebar-link--active{% endif %}"
-            href="{{ site.baseurl }}{{ doc.url }}">
-            {{ title }}
-          </a>
-        </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
     </li>
     {% endfor %}
     {% endcapture %}
@@ -70,6 +32,10 @@
     <li>
       <a href="/docs/airbrake-logo-guidelines/" class="sidebar-link sidebar-link--title"
          target="_blank">Airbrake logo guidelines</a>
+    </li>
+    <li>
+      <a href="https://airbrake.io/docs/api/" class="sidebar-link sidebar-link--title"
+         target="_blank">API Reference</a>
     </li>
     <li>
       <a href="/docs/legacy-xml-api/" class="sidebar-link sidebar-link--title"
