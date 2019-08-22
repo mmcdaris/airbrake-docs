@@ -8,7 +8,7 @@
 }
 
 .content {
-  max-width: 1300px;
+  max-width: 100vw;
   padding: $padding-sidebar-content;
   color: $ab-grey-300;
   font-size: $fontXDefault;
@@ -50,3 +50,26 @@
     }
   }
 }
+
+.category-flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.category-flex-row div {
+  @media (max-width: 1300px) {
+    flex-basis: 100%;
+  }
+  flex-basis: 49%;
+  margin-top: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+
+  border: 1px solid $ab-grey-900;
+  border-radius: 5px;
+}
+
