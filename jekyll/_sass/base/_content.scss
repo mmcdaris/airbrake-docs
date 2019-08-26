@@ -8,7 +8,7 @@
 }
 
 .content {
-  max-width: 100vw;
+  max-width: 850px;
   padding: $padding-sidebar-content;
   color: $ab-grey-300;
   font-size: $fontXDefault;
@@ -50,6 +50,8 @@
     }
   }
 }
+
+#index-content { max-width: 1200px; }
 
 .category-flex-row {
   display: flex;
