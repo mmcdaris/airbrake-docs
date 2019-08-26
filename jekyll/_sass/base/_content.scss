@@ -1,5 +1,6 @@
 .content-wrap {
   background: $ab-white;
+  min-height: 75vh;
 
   @media (min-width: $screen-sm-min) {
     box-shadow: inset 1px 0px 0px $ab-grey-800;
@@ -16,12 +17,8 @@
     padding: 2em;
   }
 
-  #site-search {
-    margin-bottom: 2em;
-  }
-
   h1, h2, h3, h4, h5, h6 {
-    margin-top: 1.5em;
+    margin-top: 1em;
     margin-bottom: 1em;
   }
 
@@ -51,5 +48,34 @@
     th {
       border-bottom: 2px solid $ab-grey-900;
     }
+  }
+}
+
+#index-content { max-width: 1200px; }
+
+.category-flex-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  margin-left: -15px;
+  margin-right: -15px;
+
+  div {
+    @media (max-width: 1100px) {
+      flex-basis: 100%;
+    }
+    flex-basis: 49%;
+
+    margin-top: 27px;
+    padding: 18px;
+
+    border: 1px solid $ab-grey-900;
+    border-radius: 5px;
+  }
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
   }
 }

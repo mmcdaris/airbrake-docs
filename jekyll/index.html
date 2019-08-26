@@ -2,30 +2,52 @@
 layout: classic-docs
 ---
 
-<div class="alert alert-info">
-  If you are looking for the full Airbrake API reference, please visit our <strong>
-  <a target="_blank" href="{{ site.url }}/docs/api/">API Docs</a></strong>.
+<div class="container-fluid">
+  <div class="category-flex-row">
+    <div>
+      <h2><a href="{{ site.baseurl }}/installing-airbrake/">Getting Started</a></h2>
+      <p>Learn how to install Airbrake in your application in minutes. If you are
+      writing code, we've got an error notifier for your favorite programming
+      languages and frameworks.</p>
+    </div>
+    <div>
+      <h2><a href="{{ site.baseurl}}/performance-monitoring/">Performance Monitoring</a></h2>
+      <p>Our Performance Monitoring was designed with developers in mind, it's
+      easy to install and let's you see a broad performance overview, measure
+      user satisfaction, identify routes with poor performance and dive deep
+      into why.
+      </p>
+    </div>
+    <div>
+      <h2><a href="{{ site.baseurl }}/integrations/">Integrations</a></h2>
+      <p>Add Airbrake into your existing workflow. Post errors to slack, create
+      github issues from errors, create trello cards and more!</p>
+    </div>
+    <div>
+      <h2><a href="{{ site.baseurl }}/features/">Airbrake Features</a></h2>
+      <p>Learn the ins and outs of Airbrakes most powerful features and how to
+      make them work for you.</p>
+    </div>
+    <div>
+      <h2><a href="{{ site.baseurl }}/airbrake-faq/">Airbrake FAQs</a></h2>
+      <p>Dig deeper and find answers to the most common questsions, and
+        a collection of tricks and troubleshooting tips.
+      </p>
+    </div>
+    <div>
+      <h2><a href="{{ site.baseurl }}/airbrake-faq/security/">Security</a></h2>
+      <p>Information on Airbrake's security and additional guides on how to keep
+      your data secure while using Airbrbake.</p>
+    </div>
+    <div>
+      <h2><a href="{{ site.baseurl }}/billing/">Billing</a></h2>
+      <p>Find all your answers about our billing policies here. Get an in depth
+      look into monthly quota pricing for Error Monitoring and information on
+      our tiered pricing for Perfomance Monitoring.</p>
+    </div>
+    <div>
+      <h2><a href="https://airbrake.io/docs/api/" target="_blank">API Reference</a></h2>
+      <p>Get full access to your error data and more through our REST API</p>
+    </div>
+  </div>
 </div>
-
-{% for category in site.data.categories %}
-  <h2>{{ category.name }}</h2>
-  <ul class="list-unstyled">
-    {% assign docs_found = 0 %}
-    {% for doc in site.docs %}
-      {% if doc.categories contains category.slug and doc.slug != category.index %}
-        {% assign docs_found = docs_found | plus: 1 %}
-        {% if docs_found < 4 %}
-          {% if doc.short-title %}
-            <li class="{% if page.path contains doc.url %}active{% endif %}"><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.short-title }}</a></li>
-          {% else %}
-            <li><a href="{{ site.baseurl }}{{ doc.url }}">{{ doc.title }}</a></li>
-          {% endif %}
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-    {% if docs_found > 3 %}
-      {% assign more = docs_found | minus: 3 %}
-        <li><em><a href="{{ site.baseurl }}/{{ category.index }}/">{{ more }} more</a></em></li>
-      {% endif %}
-  </ul>
-{% endfor %}
