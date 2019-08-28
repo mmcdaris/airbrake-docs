@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Java application
 short-title: Java
+language: java
 categories: [installing-airbrake]
 description: Installing Airbrake in a Java application
 ---

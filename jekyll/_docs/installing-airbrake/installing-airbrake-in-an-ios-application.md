@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in an iOS application
 short-title: iOS
+language: ios
 categories: [installing-airbrake]
 description: Installing Airbrake in an iOS application
 ---

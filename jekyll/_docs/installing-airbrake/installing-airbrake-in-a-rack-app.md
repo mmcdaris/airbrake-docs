@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Rack app
 short-title: Rack
+language: rack
 categories: [installing-airbrake]
 description: Installing Airbrake in a Rack app
 ---

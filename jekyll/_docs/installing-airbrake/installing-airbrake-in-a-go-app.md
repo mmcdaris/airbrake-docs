@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Go app
 short-title: Go
+language: golang
 categories: [installing-airbrake]
 description: installing airbrake in a Go app
 ---

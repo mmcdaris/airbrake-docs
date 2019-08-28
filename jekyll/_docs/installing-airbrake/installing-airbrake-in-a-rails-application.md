@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Rails application
 short-title: Rails
+language: rails
 categories: [installing-airbrake]
 description: Installing Airbrake in a Rails application
 ---

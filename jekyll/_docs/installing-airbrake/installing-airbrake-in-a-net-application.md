@@ -1,6 +1,8 @@
 ---
 layout: classic-docs
 title: .NET
+short-title: .NET
+language: dotnet
 categories: [installing-airbrake]
 description: installing airbrake in a .NET application
 ---

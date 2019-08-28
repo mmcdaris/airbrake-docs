@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in an Android application
 short-title: Android
+language: android
 categories: [installing-airbrake]
 description: Installing Airbrake in an Android application
 ---

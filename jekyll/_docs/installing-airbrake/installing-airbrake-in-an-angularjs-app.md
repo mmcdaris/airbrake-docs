@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in an AngularJS application
 short-title: AngularJS
+language: angularjs
 categories: [installing-airbrake]
 description: Installing Airbrake in an AngularJS application
 ---

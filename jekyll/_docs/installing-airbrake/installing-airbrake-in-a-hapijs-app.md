@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a hapi.js application
 short-title: hapi.js
+language: hapi
 categories: [installing-airbrake]
 description: Installing Airbrake in a hapi.js application
 ---

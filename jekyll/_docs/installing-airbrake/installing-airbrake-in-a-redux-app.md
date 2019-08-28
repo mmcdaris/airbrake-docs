@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Redux application
 short-title: Redux
+language: redux
 categories: [installing-airbrake]
 description: Installing Airbrake in a Redux application
 ---

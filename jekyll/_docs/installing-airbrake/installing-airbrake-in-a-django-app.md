@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Django app
 short-title: Django
+language: django
 categories: [installing-airbrake]
 description: installing airbrake in a Django app
 ---

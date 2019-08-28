@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in an Angular 2 application
 short-title: Angular 2
+language: angular
 categories: [installing-airbrake]
 description: Installing Airbrake in an Angular 2 application
 ---

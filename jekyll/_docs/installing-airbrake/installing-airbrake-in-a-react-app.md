@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a React application
 short-title: React
+language: react
 categories: [installing-airbrake]
 description: Installing Airbrake in a React application
 ---

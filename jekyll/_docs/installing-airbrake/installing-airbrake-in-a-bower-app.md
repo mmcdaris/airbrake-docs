@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Bower application
 short-title: Bower
+language: bower
 categories: [installing-airbrake]
 description: Installing Airbrake in a Bower application
 ---

@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Wordpress Application
 short-title: WordPress
+language: wordpress
 categories: [installing-airbrake]
 description: Installing Airbrake in a Wordpress Application
 ---
