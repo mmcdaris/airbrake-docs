@@ -1,3 +1,5 @@
+# Hi!
+
 This is a test
 
 # Airbrake Documentation
