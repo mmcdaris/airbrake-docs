@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in other apps
 short-title: Other
+language: other
 categories: [installing-airbrake]
 description: Installing Airbrake in other apps
 ---

@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Python app
 short-title: Python
+language: python
 categories: [installing-airbrake]
 description: installing airbrake in a Python app
 ---

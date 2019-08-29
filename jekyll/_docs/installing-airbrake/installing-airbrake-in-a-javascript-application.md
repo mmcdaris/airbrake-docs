@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a JavaScript application
 short-title: JavaScript
+language: javascript
 categories: [installing-airbrake]
 description: Installing Airbrake in a Javascript application
 ---

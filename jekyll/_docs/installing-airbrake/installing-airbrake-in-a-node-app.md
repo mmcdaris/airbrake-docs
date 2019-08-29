@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Node.js app
 short-title: Node.js
+language: nodejs
 categories: [installing-airbrake]
 description: installing airbrake in a node app
 ---

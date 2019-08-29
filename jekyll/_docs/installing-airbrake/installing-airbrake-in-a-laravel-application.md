@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Laravel application
 short-title: Laravel
+language: laravel
 categories: [installing-airbrake]
 description: Installing Airbrake in a Laravel application
 ---

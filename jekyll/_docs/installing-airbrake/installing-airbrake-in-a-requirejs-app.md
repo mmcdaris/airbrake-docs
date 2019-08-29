@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a RequireJS application
 short-title: RequireJS
+language: requirejs
 categories: [installing-airbrake]
 description: Installing Airbrake in a RequireJS application
 ---

@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Magento app
 short-title: Magento
+language: magento
 categories: [installing-airbrake]
 description: installing airbrake in a Magento app
 ---

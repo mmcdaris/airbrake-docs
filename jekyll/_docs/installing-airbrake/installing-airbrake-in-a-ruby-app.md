@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Ruby app
 short-title: Ruby
+language: ruby
 categories: [installing-airbrake]
 description: Installing Airbrake in a Ruby app
 ---

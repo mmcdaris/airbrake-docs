@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Vue.js application
 short-title: Vue.js
+language: vuejs
 categories: [installing-airbrake]
 description: Installing Airbrake in a Vue.js application
 ---

@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Flask app
 short-title: Flask
+language: flask
 categories: [installing-airbrake]
 description: installing airbrake in a Flask app
 ---

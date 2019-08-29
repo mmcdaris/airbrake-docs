@@ -1,7 +1,8 @@
 ---
 layout: classic-docs
 title: Installing airbrake-js in a Rails application
-short-title:  Rails JavaScript installation
+short-title: JS in Rails
+language: railsjs
 categories: [installing-airbrake]
 description: Installing airbrake-js in a Rails application
 ---

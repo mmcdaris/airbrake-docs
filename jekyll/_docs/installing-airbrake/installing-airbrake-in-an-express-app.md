@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in an Express application
 short-title: Express
+language: express
 categories: [installing-airbrake]
 description: Installing Airbrake in an Express application
 ---

@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Browserify application
 short-title: Browserify
+language: browserify
 categories: [installing-airbrake]
 description: Installing Airbrake in a Browserify application
 ---

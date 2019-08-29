@@ -2,6 +2,7 @@
 layout: classic-docs
 title: Installing Airbrake in a Sinatra app
 short-title: Sinatra
+language: sinatra
 categories: [installing-airbrake]
 description: Installing Airbrake in a Sinatra app
 ---
